@@ -59,19 +59,18 @@ nav a:hover {
 /* Hero */
 
 .hero-container {
-    /* background-image: url(https://i0.wp.com/kumonphilippines.com/wp-content/uploads/2024/01/23.png?resize=1200%2C675&ssl=1); */
     position: relative;
-    height: 100vh;
-    min-height: 700px;
+    height: 90vh;
+    min-height: 600px;
     background: url(https://i0.wp.com/kumonphilippines.com/wp-content/uploads/2024/01/23.png?resize=1200%2C675&ssl=1) no-repeat center center fixed;
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 12em;
+    padding-top: 25vh;
     padding-right: 4em;
     padding-left: 4em;
     width: 100%;
-    color: white;
+    /* color: white; */
 }
 
 .hero-container:before {
@@ -82,16 +81,15 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: .5;
-    background: #007bff;
+    opacity: .55;
+    background: var(--primary-color);
 }
 
 .hero-title {
     font-size: 5em;
-    color: white;
 }
 
-.row {
+.hero-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -103,4 +101,39 @@ nav a:hover {
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 60%;
+}
+
+/* Kumon Method Section */
+
+.container {
+    margin-top: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+.method-title {
+    margin-bottom: 2em;
+}
+
+.method-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.method-col {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.method-icon {
+    width: 2.5em;
+    padding-top: 0.5em
+}
+
+.method-text {
+    padding-left: 1.5rem;
+    /* border: 1px solid black; */
+    height: 15vh;
+    width: 500px;
 }
