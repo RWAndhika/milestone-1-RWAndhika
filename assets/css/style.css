@@ -21,9 +21,13 @@ body {
 }
 
 .container {
-    margin-top: 2em;
-    padding-right: 4em;
-    padding-left: 4em;
+    margin-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.section-title {
+    margin-bottom: 2em;
 }
 
 /* Navbar */
@@ -37,7 +41,6 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     z-index: 1;
-    padding: 0.75rem 1.5rem;
 }
 
 nav a {
@@ -58,8 +61,8 @@ nav a:hover {
 }
 
 .nav-logo img {
-    width: 115.2px;
-    height: 64.8px;
+    padding-top: 8px;
+    width: 120px;
 }
 
 /* Hero */
@@ -76,7 +79,6 @@ nav a:hover {
     padding-right: 4em;
     padding-left: 4em;
     width: 100%;
-    /* color: white; */
 }
 
 .hero-container:before {
@@ -111,10 +113,6 @@ nav a:hover {
 
 /* Kumon Method Section */
 
-.method-title {
-    margin-bottom: 2em;
-}
-
 .method-row {
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +138,6 @@ nav a:hover {
 
 .method-text {
     padding-left: 1.5rem;
-    height: 15vh;
     width: 500px;
 }
 
@@ -196,4 +193,123 @@ nav a:hover {
 #bahasa-text {
     grid-row: 3;
     grid-column: 4 / 6;
+}
+
+@media screen and (max-width: 1024px) {
+    #math-img {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    #math-text {
+        grid-row: 1;
+        grid-column: 2 / 6;
+    }
+    
+    #eng-img {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    #eng-text {
+        grid-row: 2;
+        grid-column: 2 / 6;
+    }
+    
+    #bahasa-img {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    #bahasa-text {
+        grid-row: 3;
+        grid-column: 2 / 6;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 2.8vw;
+        padding: 14px 18px;
+    }
+
+    .hero-col {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 1em;
+    }
+
+    .method-icon {
+        width: 2em;
+        padding-top: 0.5em
+    }
+    
+    .method-text {
+        padding-left: 1.5rem;
+        width: 400px;
+        font-size: 0.8em;
+    }
+
+    .grid-item {
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    nav a {
+        padding: 14px 15px;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-col {
+        font-size: 3vw;
+    }
+
+    .section-title {
+        font-size: 5vw;
+    }
+
+    .method-icon {
+        width: 1.8em;
+        padding-top: 0.5em
+    }
+    
+    .method-text {
+        padding-left: 1.5rem;
+        width: 300px;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    nav a {
+        padding: 14px 12px;
+    }
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .method-icon {
+        width: 5vw;
+        padding-top: 0.5em
+    }
+    
+    .method-text {
+        padding-left: 1.5rem;
+        width: 250px;
+    }
 }
