@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #54B3E6;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-optical-sizing: auto;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 0.75rem 1.5rem;
+}
+
+nav a {
+    color: rgba(0, 0, 0, .8);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav-logo img {
+    width: 115.2px;
+    height: 64.8px;
+}
+
+/* Hero */
+
+.hero-container {
+    /* background-image: url(https://i0.wp.com/kumonphilippines.com/wp-content/uploads/2024/01/23.png?resize=1200%2C675&ssl=1); */
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    background: url(https://i0.wp.com/kumonphilippines.com/wp-content/uploads/2024/01/23.png?resize=1200%2C675&ssl=1) no-repeat center center fixed;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 12em;
+    padding-right: 4em;
+    padding-left: 4em;
+    width: 100%;
+    color: white;
+}
+
+.hero-container:before {
+    position: absolute;
+    z-index: 0;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background: #007bff;
+}
+
+.hero-title {
+    font-size: 5em;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 60%;
+}
