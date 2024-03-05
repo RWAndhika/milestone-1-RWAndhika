@@ -20,6 +20,12 @@ body {
     font-style: normal;
 }
 
+.container {
+    margin-top: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
 /* Navbar */
 
 nav {
@@ -105,12 +111,6 @@ nav a:hover {
 
 /* Kumon Method Section */
 
-.container {
-    margin-top: 2em;
-    padding-right: 4em;
-    padding-left: 4em;
-}
-
 .method-title {
     margin-bottom: 2em;
 }
@@ -119,11 +119,18 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    column-gap: 1em;
 }
 
 .method-col {
     display: flex;
     margin-bottom: 2em;
+    transition: transform .2s;
+    
+}
+
+.method-col:hover {
+    transform: scale(1.1);
 }
 
 .method-icon {
@@ -133,7 +140,60 @@ nav a:hover {
 
 .method-text {
     padding-left: 1.5rem;
-    /* border: 1px solid black; */
     height: 15vh;
     width: 500px;
+}
+
+/* program section */
+
+.program-grid {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item {
+    padding: 1em;
+}
+
+.grid-item > img {
+    width: 20vw;
+    border-radius: 50%;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.grid-item > img:hover {
+    box-shadow: 2px 2px 10px var(--primary-color);
+}
+
+#math-img {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#math-text {
+    grid-row: 1;
+    grid-column: 2 / 4;
+}
+
+#eng-img {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#eng-text {
+    grid-row: 2;
+    grid-column: 3 / 5;
+}
+
+#bahasa-img {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#bahasa-text {
+    grid-row: 3;
+    grid-column: 4 / 6;
 }
