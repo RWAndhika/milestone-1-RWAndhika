@@ -21,18 +21,18 @@
             <img src="./assets/images/kumon-logo.png" alt="Kumon logo">
         </div>
         <ul>
-            <li><a>Home</a></li>
-            <li><a>Method</a></li>
-            <li><a>Programs</a></li>
-            <li><a>Trial</a></li>
-            <li><a>Enroll</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trial">Trial</a></li>
+            <li><a href="#">Enroll</a></li>
         </ul>
     </nav>
 
     <header>
         <div class="hero-container">
             <div class="hero-row">
-                <div class="hero-col txt-shadow">
+                <div class="hero-col">
                     <h1 class="hero-title">KUMON</h1>
                     <p>The Kumon Method aims for students to go beyond their school grade level through self-learning
                         and
@@ -49,7 +49,8 @@
 
     <main>
         <article>
-            <section>
+            <!-- kumon method -->
+            <section id="method">
                 <div class="container">
                     <h2 class="section-title">The Kumon Method</h2>
                     <div class="method-row">
@@ -102,12 +103,13 @@
                 </div>
             </section>
 
-            <section>
+            <!-- programs -->
+            <section id="programs">
                 <div class="container">
                     <h2 class="section-title">Kumon Programs</h2>
                     <div class="program-grid">
                         <div class="grid-item" id="math-img">
-                            <img src="./assets/images/math-photo-1.jpg" alt="student learn mathematic">
+                            <img loading="lazy" src="./assets/images/math-photo-1.jpg" alt="student learn mathematic">
                         </div>
                         <div class="grid-item" id="math-text">
                             <h3>Mathematic</h3>
@@ -118,7 +120,7 @@
                                 You will watch your child’s math skills advance and see their confidence grow.</p>
                         </div>
                         <div class="grid-item" id="eng-img">
-                            <img src="./assets/images/english-photo-1.jpg" alt="student learn english">
+                            <img loading="lazy" src="./assets/images/english-photo-1.jpg" alt="student learn english">
                         </div>
                         <div class="grid-item" id="eng-text">
                             <h3>English</h3>
@@ -130,7 +132,7 @@
                                 confidence grow.</p>
                         </div>
                         <div class="grid-item" id="bahasa-img">
-                            <img src="./assets/images/indo-photo-1.jpg" alt="student learn indonesia">
+                            <img loading="lazy" src="./assets/images/indo-photo-1.jpg" alt="student learn indonesia">
                         </div>
                         <div class="grid-item" id="bahasa-text">
                             <h3>Bahasa Indonesia</h3>
@@ -147,17 +149,21 @@
             </section>
         </article>
 
-        <section>
+        <!-- free trial -->
+        <section id="trial">
             <div class="container bg-img">
                 <h2 class="section-title relative">Register for Free Trial!</h2>
                 <div class="trial-row">
                     <div class="trial-col">
                         <p>Experience Kumon with our free trial today. Your child will embark on a journey with
-                            a <b>free assessment test</b>, followed by a <b>personalized discussion</b> to identify the perfect
-                            starting point and delve into the <b>methodology of learning</b> at Kumon. Join us to unlock your child's
+                            a <b>free assessment test</b>, followed by a <b>personalized discussion</b> to identify the
+                            perfect
+                            starting point and delve into the <b>methodology of learning</b> at Kumon. Join us to unlock
+                            your child's
                             potential.
                         </p><br><br><br>
-                        <p>Contact us for free trial at <a href="https://maps.app.goo.gl/fXTCLUiB5JjKL5iD6" target="_blank">Kumon
+                        <p>Contact us for free trial at <a href="https://maps.app.goo.gl/fXTCLUiB5JjKL5iD6"
+                                target="_blank">Kumon
                                 Mediterania Regency Cikunir</a>!</p>
                         <a href="#">
                             <button class="custom-btn">Register</button>
@@ -176,11 +182,28 @@
                 </div>
             </div>
         </section>
+
+        <!-- instructor -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Instructors</h2>
+                <div class="card-container">
+                    <div class="card-item">
+                        <img loading="lazy" src="./assets/images/blank-profile-pic.png" alt="profile picture">
+                        <h3>Rini Zulviani</h3>
+                        <p class="instructor-title">Owner & Instructor of Kumon MRC</p>
+                        <p>is the founder of the Kumon branch in Mediterania Regency Cikunir. She has a great enthusiasm
+                            for teaching, especially in the field of mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
             <p>&#169; 2024 Kumon Mediterania Regency Cikunir. All rights Reserved</p>
+            <img src="./assets/images/kumon-emblem.png" alt="kumon emblem" width="100px" height="auto">
         </div>
     </footer>
 </body>
