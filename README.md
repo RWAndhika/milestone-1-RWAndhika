@@ -1,4 +1,5 @@
 # RevoU Project Milestone 1
+
 ![Banner image](./readme-img/banner.png)
 
 Hello my name is Raden Wisnu Andhika Pranidhia. This is a project assignment from RevoU about making a company web profile. Here I present you Kumon Mediterania Regency Cikunir's web company profile. I tried my best focusing on making a simplistic and nice looking website while making the theme as similar as possible from Kumon's design without disregarding accessibility and performance of the web. If you have any question or anything else regarding the website, feel free to contact me at [linkedin](https://www.linkedin.com/in/raden-wisnu-andhika-pranidhia-b17a16196/), [email](mailto:radenwisnu21@gmail.com). I am open to any criticism and suggestion. Thank you!
